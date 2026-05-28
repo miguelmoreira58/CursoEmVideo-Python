@@ -9,4 +9,7 @@ while True:
 
     soma += num #embaixo do break não conta o 999
     contador += 1
-print(f'A soma dos {contador} valores foi {soma}')
+if contador > 1:
+    print(f'A soma dos {contador} valores foi {soma}')
+else:
+    print(f'Apenas {contador} valor foi digitado.')

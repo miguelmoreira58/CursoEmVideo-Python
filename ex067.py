@@ -2,10 +2,12 @@
 while True:
     tabuada = int(input('Quer ver a tabuada de qual valor? '))
 
-    if tabuada <= 0:
+    if tabuada < 0:
         break
 
+    print('-'*15)
     for c in range(1,11):
         print(f'{tabuada} x {c} = {tabuada*c}')
-    
+    print('-'*15)
+
 print('PROGRAMA TABUADA ENCERRADO. Volte sempre!')
